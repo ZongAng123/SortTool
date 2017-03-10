@@ -15,6 +15,10 @@
 		74410BCF1E72925900EAFD45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74410BCD1E72925900EAFD45 /* LaunchScreen.storyboard */; };
 		74410BDA1E72925900EAFD45 /* LZSortToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74410BD91E72925900EAFD45 /* LZSortToolTests.m */; };
 		74410BE51E72925900EAFD45 /* LZSortToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74410BE41E72925900EAFD45 /* LZSortToolUITests.m */; };
+		74410BF51E7292A500EAFD45 /* SortTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 74410BF41E7292A500EAFD45 /* SortTool.m */; };
+		74410BF81E7292CD00EAFD45 /* NSObject+SortKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 74410BF71E7292CD00EAFD45 /* NSObject+SortKey.m */; };
+		74410BFB1E7292F300EAFD45 /* ChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 74410BFA1E7292F300EAFD45 /* ChineseToPinyin.m */; };
+		74410BFE1E72951D00EAFD45 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 74410BFD1E72951D00EAFD45 /* People.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		74410BE01E72925900EAFD45 /* LZSortToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZSortToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74410BE41E72925900EAFD45 /* LZSortToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZSortToolUITests.m; sourceTree = "<group>"; };
 		74410BE61E72925900EAFD45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74410BF31E7292A500EAFD45 /* SortTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortTool.h; sourceTree = "<group>"; };
+		74410BF41E7292A500EAFD45 /* SortTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortTool.m; sourceTree = "<group>"; };
+		74410BF61E7292CD00EAFD45 /* NSObject+SortKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SortKey.h"; sourceTree = "<group>"; };
+		74410BF71E7292CD00EAFD45 /* NSObject+SortKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SortKey.m"; sourceTree = "<group>"; };
+		74410BF91E7292F300EAFD45 /* ChineseToPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyin.h; sourceTree = "<group>"; };
+		74410BFA1E7292F300EAFD45 /* ChineseToPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyin.m; sourceTree = "<group>"; };
+		74410BFC1E72951D00EAFD45 /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		74410BFD1E72951D00EAFD45 /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +113,13 @@
 		74410BBE1E72925900EAFD45 /* LZSortTool */ = {
 			isa = PBXGroup;
 			children = (
+				74410BF21E72927F00EAFD45 /* SortClass */,
 				74410BC21E72925900EAFD45 /* AppDelegate.h */,
 				74410BC31E72925900EAFD45 /* AppDelegate.m */,
 				74410BC51E72925900EAFD45 /* ViewController.h */,
 				74410BC61E72925900EAFD45 /* ViewController.m */,
+				74410BFC1E72951D00EAFD45 /* People.h */,
+				74410BFD1E72951D00EAFD45 /* People.m */,
 				74410BC81E72925900EAFD45 /* Main.storyboard */,
 				74410BCB1E72925900EAFD45 /* Assets.xcassets */,
 				74410BCD1E72925900EAFD45 /* LaunchScreen.storyboard */,
@@ -138,6 +153,19 @@
 				74410BE61E72925900EAFD45 /* Info.plist */,
 			);
 			path = LZSortToolUITests;
+			sourceTree = "<group>";
+		};
+		74410BF21E72927F00EAFD45 /* SortClass */ = {
+			isa = PBXGroup;
+			children = (
+				74410BF31E7292A500EAFD45 /* SortTool.h */,
+				74410BF41E7292A500EAFD45 /* SortTool.m */,
+				74410BF61E7292CD00EAFD45 /* NSObject+SortKey.h */,
+				74410BF71E7292CD00EAFD45 /* NSObject+SortKey.m */,
+				74410BF91E7292F300EAFD45 /* ChineseToPinyin.h */,
+				74410BFA1E7292F300EAFD45 /* ChineseToPinyin.m */,
+			);
+			name = SortClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +301,10 @@
 				74410BC71E72925900EAFD45 /* ViewController.m in Sources */,
 				74410BC41E72925900EAFD45 /* AppDelegate.m in Sources */,
 				74410BC11E72925900EAFD45 /* main.m in Sources */,
+				74410BFE1E72951D00EAFD45 /* People.m in Sources */,
+				74410BFB1E7292F300EAFD45 /* ChineseToPinyin.m in Sources */,
+				74410BF51E7292A500EAFD45 /* SortTool.m in Sources */,
+				74410BF81E7292CD00EAFD45 /* NSObject+SortKey.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
